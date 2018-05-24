@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css?family=Muli|Varela+Round');
+.bleu::selection {
+    background: #001cf0;
+    color: #fff;
+}
+
+.jaune::selection {
+    background: #fff600;
+    color: #fff;
+}
+
+.vert::selection {
+    background: #00657e;
+    color: #fff;
+}
+
+.ciel::selection {
+    background: #36d5ff;
+    color: #fff;
+}
+
+.rouge::selection {
+    background: #fa313a;
+    color: #fff;
+}
+
+.bleu::-moz-selection {
+    background: #001cf0;
+    color: #fff;
+}
+
+.jaune::-moz-selection {
+    background: #fff600;
+    color: #fff;
+}
+
+.vert::-moz-selection {
+    background: #00657e;
+    color: #fff;
+}
+
+.ciel::-moz-selection {
+    background: #36d5ff;
+    color: #fff;
+}
+
+.rouge::-moz-selection {
+    background: #fa313a;
+    color: #fff;
+}
+
+/* reset */
+
+html,
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    overflow: scroll;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.startfade {
+    display: none;
+}
+
+/* guruapp */
+
+#guruContainer {
+    position: fixed;
+}
+
+.guru {
+    float: left;
+    position: relative;
+}
+
+/* autres elements */
+
+.logo {
+    position: fixed;
+    left: 50%;
+    z-index: 99999999999;
+    height: 175px;
+    width: 309px;
+}
+
+#footer {
+    position: relative;
+}
+
+#moreInfo {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#E5FFFFFF, endColorstr=#E5FFFFFF);
+    position: relative;
+    z-index: 99999;
+}
+
+#moreInfo .text {
+    padding: 40px;
+}
+
+.gurupoint {
+    background: #00657e;
+    width: 25px;
+    ;
+    height: 25px;
+    display: inline-block;
+    margin-left: 0;
+    position: relative;
+    top: 10px;
+    border-radius: 50%;
+}
+
+.arrow {
+    display: none;
+    background: url("../images/fleche.png");
+    background: url("../images/fleche_ie.png")\9;
+    background-size: 34px 28px;
+    width: 34px;
+    height: 28px;
+    position: fixed;
+    z-index: 9999;
+    top: 55%;
+    left: 50%;
+    margin-left: -17px;
+    cursor: pointer;
+}
+
+/* polices & boutons */
+
+h2 {
+    text-transform: uppercase;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+p,
+address {
+    color: #404040;
+    font-family: 'Muli', sans-serif;
+    font-style: italic;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.slogan {
+    position: fixed;
+    z-index: 9999;
+    color: #252525;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 500;
+    margin-right: -50%;
+    left: 25%;
+    top: 40%;
+    letter-spacing: 2px;
+    line-height: 44px;
+    font-size: 34px;
+}
+
+.slogan span {
+    font-family: 'Muli', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.koffie {
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* polices "responsives" */
+
+@media (min-width: 701px) and (max-width: 800px) {
+    .slogan {
+        font-size: 24px;
+    }
+    .gurupoint {
+        width: 19px;
+        height: 19px;
+        margin-left: 0px;
+        top: 12px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 700px) {
+    .slogan {
+        font-size: 24px;
+        left: 18%;
+    }
+    .gurupoint {
+        width: 19px;
+        height: 19px;
+        margin-left: 0px;
+        top: 12px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 600px) {
+    .slogan {
+        font-size: 20px;
+        line-height: 34px;
+        left: 15%;
+    }
+    p,
+    address {
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    .gurupoint {
+        width: 16px;
+        ;
+        height: 16px;
+        margin-left: 0px;
+        top: 9px;
+    }
+}
+
+/* social icons */
+
+.social {
+    width: 168px;
+    margin: auto;
+    display: inline-block;
+}
+
+#facebook {
+    float: left;
+    margin: 20px 5px 0 5px;
+    width: 32px;
+    height: 32px;
+    transition: all 0.1s ease-in;
+    background: url("../images/facebook.png") bottom;
+    background: url("../images/facebook_ie.png") bottom \9;
+    background-size: 32px 64px;
+}
+
+#facebook:hover {
+    background: url("../images/facebook.png") top;
+    background: url("../images/facebook_ie.png") top \9;
+    background-size: 32px 64px;
+}
+
+#twitter {
+    float: left;
+    margin: 20px 5px 0 5px;
+    width: 32px;
+    height: 32px;
+    transition: all 0.1s ease-in;
+    background: url("../images/twitter.png") bottom;
+    background: url("../images/twitter_ie.png") bottom \9;
+    background-size: 32px 64px;
+}
+
+#twitter:hover {
+    background: url("../images/twitter.png") top;
+    background: url("../images/twitter_ie.png") top \9;
+    background-size: 32px 64px;
+}
+
+#instagram {
+    float: left;
+    margin: 20px 5px 0 5px;
+    width: 32px;
+    height: 32px;
+    transition: all 0.1s ease-in;
+    background: url("../images/instagram.png") bottom;
+    background: url("../images/instagram_ie.png") bottom \9;
+    background-size: 32px 64px;
+}
+
+#instagram:hover {
+    background: url("../images/instagram.png") top;
+    background: url("../images/instagram_ie.png") top \9;
+    background-size: 32px 64px;
+}
+
+#dribbble {
+    float: left;
+    margin: 20px 5px 0 5px;
+    width: 32px;
+    height: 32px;
+    transition: all 0.1s ease-in;
+    background: url("../images/dribbble.png") bottom;
+    background: url("../images/dribbble_ie.png") bottom \9;
+    background-size: 32px 64px;
+}
+
+#dribbble:hover {
+    background: url("../images/dribbble.png") top;
+    background: url("../images/dribbble_ie.png") top \9;
+    background-size: 32px 64px;
+}
