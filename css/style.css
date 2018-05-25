@@ -163,13 +163,14 @@ address {
 }
 
 .slogan {
+    text-align: center;
     position: fixed;
     z-index: 9999;
     color: #252525;
     font-family: 'Varela Round', sans-serif;
     font-weight: 500;
-    margin-right: -50%;
-    left: 28%;
+    left: 50%;
+    margin-left: -325px;
     top: 40%;
     letter-spacing: 2px;
     line-height: 44px;
@@ -199,6 +200,7 @@ a:hover {
 @media (min-width: 701px) and (max-width: 800px) {
     .slogan {
         font-size: 24px;
+        margin-left: -240px;
     }
     .gurupoint {
         width: 19px;
@@ -211,7 +213,7 @@ a:hover {
 @media (min-width: 601px) and (max-width: 700px) {
     .slogan {
         font-size: 24px;
-        left: 18%;
+        margin-left: -240px;
     }
     .gurupoint {
         width: 19px;
@@ -225,7 +227,7 @@ a:hover {
     .slogan {
         font-size: 20px;
         line-height: 34px;
-        left: 15%;
+        margin-left: -205px;
     }
     p,
     address {
@@ -299,22 +301,5 @@ a:hover {
 #instagram:hover {
     background: url("../images/instagram.png") top;
     background: url("../images/instagram_ie.png") top \9;
-    background-size: 32px 64px;
-}
-
-#dribbble {
-    float: left;
-    margin: 20px 5px 0 5px;
-    width: 32px;
-    height: 32px;
-    transition: all 0.1s ease-in;
-    background: url("../images/dribbble.png") bottom;
-    background: url("../images/dribbble_ie.png") bottom \9;
-    background-size: 32px 64px;
-}
-
-#dribbble:hover {
-    background: url("../images/dribbble.png") top;
-    background: url("../images/dribbble_ie.png") top \9;
     background-size: 32px 64px;
 }
